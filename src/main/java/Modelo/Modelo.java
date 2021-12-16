@@ -146,12 +146,17 @@ public class Modelo {
     {
         return reservasActuales;
     }
-    public void getFechasInicioFin(int i,java.util.Date inicio, java.util.Date fin )
-    {
+    
+    public java.util.Date getFechaInicio(int i){
         Reserva r_aux; 
         r_aux = reservasActuales.get(i);
-        inicio = r_aux.getFechaEntrada();
-        fin = r_aux.getFechaSalida();
+        return r_aux.getFechaEntrada();
+    }
+    
+    public java.util.Date getFechaFin(int i){
+        Reserva r_aux; 
+        r_aux = reservasActuales.get(i);
+        return r_aux.getFechaSalida();
     }
     
     public void setFechaInicioFin(int i,java.util.Date inicio, java.util.Date fin)

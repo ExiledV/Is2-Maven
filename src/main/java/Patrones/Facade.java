@@ -129,7 +129,8 @@ public class Facade {
     }
     
     public static PagoAdmin verFecha(Modelo modelo,PagoAdmin ventanaPagoAdmin, Date aux_inicio, Date aux_fin){
-        modelo.getFechasInicioFin(ventanaPagoAdmin.getIndex(), aux_inicio, aux_fin);
+        aux_inicio = modelo.getFechaInicio(ventanaPagoAdmin.getIndex());
+        aux_fin = modelo.getFechaInicio(ventanaPagoAdmin.getIndex());
         ventanaPagoAdmin.setFechas( aux_inicio, aux_fin);
         return ventanaPagoAdmin;
     }
