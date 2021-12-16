@@ -65,7 +65,7 @@ public class UserControlador {
                     if( (vista.getNombreUsuario().equals(modelo.getIDAdmin()))){
                          
                         pwrd = new String(vista.getPwrd());
-                        pwrd = pwrd.substring(0, pwrd.length());
+                        pwrd = pwrd.substring(pwrd.length());
                         if(pwrd.equals(modelo.getPwrdAdmin())){
                             HubAdmin_View ventanRaul = new HubAdmin_View();
                             ventanRaul.setVisible(true);
@@ -75,7 +75,7 @@ public class UserControlador {
                     if( vista.getNombreUsuario().equals(modelo.getIDUser())){
                         
                         pwrd = new String(vista.getPwrd());
-                        pwrd = pwrd.substring(0, pwrd.length());
+                        pwrd = pwrd.substring(pwrd.length());
                         if(pwrd.equals(modelo.getPwrdUser())){
                             hubUsuario = new HubUserView();
                             hubUsuario.setVisible(true);
