@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane3" alignment="0" min="-2" pref="275" max="-2" attributes="0"/>
+                          <Component id="jButton2" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="89" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="fechaInicioChooser" alignment="0" min="-2" pref="172" max="-2" attributes="0"/>
+                                          <Component id="fechaFinChooser" alignment="0" min="-2" pref="173" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="parcelaCombo" min="-2" pref="128" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="userClienteField" min="-2" pref="150" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="mensajeError" min="-2" pref="450" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="157" max="-2" attributes="0"/>
+                              <Component id="botonAlquilar" min="-2" pref="154" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="162" max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace pref="82" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace pref="19" max="32767" attributes="0"/>
+              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Component id="jScrollPane3" min="-2" pref="376" max="-2" attributes="0"/>
+                      <EmptySpace pref="28" max="32767" attributes="0"/>
+                      <Component id="jButton2" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
+                      <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="userClienteField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                          <Component id="fechaInicioChooser" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="fechaFinChooser" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="parcelaCombo" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="mensajeError" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
+                      <Component id="botonAlquilar" min="-2" pref="65" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane3">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JList" name="listaReservas">
+          <Properties>
+            <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
+              <StringArray count="5">
+                <StringItem index="0" value="Item 1"/>
+                <StringItem index="1" value="Item 2"/>
+                <StringItem index="2" value="Item 3"/>
+                <StringItem index="3" value="Item 4"/>
+                <StringItem index="4" value="Item 5"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="valueChanged" listener="javax.swing.event.ListSelectionListener" parameters="javax.swing.event.ListSelectionEvent" handler="listaReservasValueChanged"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="24" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Reservas"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton2">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Volver"/>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[200, 60]"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="botonAlquilar">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Alquilar"/>
+        <Property name="actionCommand" type="java.lang.String" value="AlquilarParcelaAdmin"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botonAlquilarActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel5">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Fecha Ingreso:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel6">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Fecha Salida:"/>
+      </Properties>
+    </Component>
+    <Component class="com.toedter.calendar.JDateChooser" name="fechaInicioChooser">
+    </Component>
+    <Component class="com.toedter.calendar.JDateChooser" name="fechaFinChooser">
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel3">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Reservar:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel4">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Parcelas disponibles:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="userClienteField">
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Usuario Cliente:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="parcelaCombo">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="100">
+            <StringItem index="0" value="1:1"/>
+            <StringItem index="1" value="1:2"/>
+            <StringItem index="2" value="1:3"/>
+            <StringItem index="3" value="1:4"/>
+            <StringItem index="4" value="1:5"/>
+            <StringItem index="5" value="1:6"/>
+            <StringItem index="6" value="1:7"/>
+            <StringItem index="7" value="1:8"/>
+            <StringItem index="8" value="1:9"/>
+            <StringItem index="9" value="1:10"/>
+            <StringItem index="10" value="2:1"/>
+            <StringItem index="11" value="2:2"/>
+            <StringItem index="12" value="2:3"/>
+            <StringItem index="13" value="2:4"/>
+            <StringItem index="14" value="2:5"/>
+            <StringItem index="15" value="2:6"/>
+            <StringItem index="16" value="2:7"/>
+            <StringItem index="17" value="2:8"/>
+            <StringItem index="18" value="2:9"/>
+            <StringItem index="19" value="2:10"/>
+            <StringItem index="20" value="3:1"/>
+            <StringItem index="21" value="3:2"/>
+            <StringItem index="22" value="3:3"/>
+            <StringItem index="23" value="3:4"/>
+            <StringItem index="24" value="3:5"/>
+            <StringItem index="25" value="3:6"/>
+            <StringItem index="26" value="3:7"/>
+            <StringItem index="27" value="3:8"/>
+            <StringItem index="28" value="3:9"/>
+            <StringItem index="29" value="3:10"/>
+            <StringItem index="30" value="4:1"/>
+            <StringItem index="31" value="4:2"/>
+            <StringItem index="32" value="4:3"/>
+            <StringItem index="33" value="4:4"/>
+            <StringItem index="34" value="4:5"/>
+            <StringItem index="35" value="4:6"/>
+            <StringItem index="36" value="4:7"/>
+            <StringItem index="37" value="4:8"/>
+            <StringItem index="38" value="4:9"/>
+            <StringItem index="39" value="4:10"/>
+            <StringItem index="40" value="5:1"/>
+            <StringItem index="41" value="5:2"/>
+            <StringItem index="42" value="5:3"/>
+            <StringItem index="43" value="5:4"/>
+            <StringItem index="44" value="5:5"/>
+            <StringItem index="45" value="5:6"/>
+            <StringItem index="46" value="5:7"/>
+            <StringItem index="47" value="5:8"/>
+            <StringItem index="48" value="5:9"/>
+            <StringItem index="49" value="5:10"/>
+            <StringItem index="50" value="6:1"/>
+            <StringItem index="51" value="6:2"/>
+            <StringItem index="52" value="6:3"/>
+            <StringItem index="53" value="6:4"/>
+            <StringItem index="54" value="6:5"/>
+            <StringItem index="55" value="6:6"/>
+            <StringItem index="56" value="6:7"/>
+            <StringItem index="57" value="6:8"/>
+            <StringItem index="58" value="6:9"/>
+            <StringItem index="59" value="6:10"/>
+            <StringItem index="60" value="7:1"/>
+            <StringItem index="61" value="7:2"/>
+            <StringItem index="62" value="7:3"/>
+            <StringItem index="63" value="7:4"/>
+            <StringItem index="64" value="7:5"/>
+            <StringItem index="65" value="7:6"/>
+            <StringItem index="66" value="7:7"/>
+            <StringItem index="67" value="7:8"/>
+            <StringItem index="68" value="7:9"/>
+            <StringItem index="69" value="7:10"/>
+            <StringItem index="70" value="8:1"/>
+            <StringItem index="71" value="8:2"/>
+            <StringItem index="72" value="8:3"/>
+            <StringItem index="73" value="8:4"/>
+            <StringItem index="74" value="8:5"/>
+            <StringItem index="75" value="8:6"/>
+            <StringItem index="76" value="8:7"/>
+            <StringItem index="77" value="8:8"/>
+            <StringItem index="78" value="8:9"/>
+            <StringItem index="79" value="8:10"/>
+            <StringItem index="80" value="9:1"/>
+            <StringItem index="81" value="9:2"/>
+            <StringItem index="82" value="9:3"/>
+            <StringItem index="83" value="9:4"/>
+            <StringItem index="84" value="9:5"/>
+            <StringItem index="85" value="9:6"/>
+            <StringItem index="86" value="9:7"/>
+            <StringItem index="87" value="9:8"/>
+            <StringItem index="88" value="10:9"/>
+            <StringItem index="89" value="10:10"/>
+            <StringItem index="90" value="10:1"/>
+            <StringItem index="91" value="10:2"/>
+            <StringItem index="92" value="10:3"/>
+            <StringItem index="93" value="10:4"/>
+            <StringItem index="94" value="10:5"/>
+            <StringItem index="95" value="10:6"/>
+            <StringItem index="96" value="10:7"/>
+            <StringItem index="97" value="10:8"/>
+            <StringItem index="98" value="10:9"/>
+            <StringItem index="99" value="10:10"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="mensajeError">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="12" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="33" green="33" red="ff" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="ERROR: La parcela seleccionada no est&#xe1; disponible en ese rango de dias."/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>
