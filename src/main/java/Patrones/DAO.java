@@ -45,13 +45,11 @@ public class DAO {
     
     public static ArrayList<Actividad> cargarActividades(){
         ArrayList<Actividad> lista_actividades = new ArrayList<Actividad>();
-        Statement declaracion;
         ResultSet res;
         ResultSet res2;
         ArrayList<Integer> idesAct = new ArrayList<Integer>();
         //cargar todas las actividades de la base de datos y los clientes apuntados
-        try{
-            declaracion = conexionBD.createStatement();
+        try(Statement declaracion = conexionBD.createStatement()){
             res = declaracion.executeQuery("SELECT * FROM Actividad");
             
             while (res.next()){
@@ -66,11 +64,10 @@ public class DAO {
         }catch(SQLException e){
             System.out.println("Error al cargar la base de datos");
         }
-        try{
+        try(Statement declaracion = conexionBD.createStatement()){
                 int contador = 0;
                 int contador2 = 0;
                 //cargar los clientes de la actividad
-                declaracion = conexionBD.createStatement();
                 for (int i = 0; i < lista_actividades.size(); i++){
                     res2 = declaracion.executeQuery("SELECT C.NOMBRE FROM PAREJA P JOIN CLIENTE C ON P.IDCLIENTE1 = C.IDCLIENTE WHERE P.IDACTIVIDAD = " + idesAct.get(contador2));
                     while(res2.next()){
@@ -91,7 +88,6 @@ public class DAO {
     }
     
     public static Parcelas cargarParcelas() {
-        Statement declaracion;
         ResultSet resFila;
         ResultSet resCol;
         ResultSet resReservas;
@@ -99,8 +95,7 @@ public class DAO {
         int cols = 0;
         int rows = 0;
         
-        try{
-            declaracion = conexionBD.createStatement();
+        try(Statement declaracion = conexionBD.createStatement()){
             
             resCol = declaracion.executeQuery("select count(*) from parcela where columna = 1");
             
@@ -124,8 +119,7 @@ public class DAO {
         ListaReservas[][] lista = new ListaReservas[rows][cols];
         String des = "";
         int contadorReservas = 0;
-        try{
-            declaracion = conexionBD.createStatement();
+        try(Statement declaracion = conexionBD.createStatement()){
             
             for(int i = 0; i < rows; i++)
                 for(int j = 0; j < cols; j++){
@@ -154,16 +148,12 @@ public class DAO {
     }
     
     public static void anyadirReserva(Reserva r){
-        Statement declaracion;
         ResultSet rescli;
         ResultSet res;
+        String codigo = "INSERT INTO RESERVA VALUES " + "(?,?,?,?,?)";
         
-        try{
-            
-            String codigo = "INSERT INTO RESERVA VALUES " + "(?,?,?,?,?)";
-            PreparedStatement ps = conexionBD.prepareStatement(codigo);
-            
-            declaracion = conexionBD.createStatement();
+        try(Statement declaracion = conexionBD.createStatement();PreparedStatement ps = conexionBD.prepareStatement(codigo)){
+           
             rescli = declaracion.executeQuery("select idCliente from cliente where nombre like '" + r.getCliente().getNombre() + "'");
             
             int idcli = 0;
@@ -196,13 +186,12 @@ public class DAO {
     }
      
     public static void modificarReserva(int idReservaAModificar, Reserva rModificada){
-        Statement declaracionSelect1, declaracionSelect2, declaracionUpdate;
         int idNuevo, idClienteNuevo = -1, idParcelaNuevo = -1;
         String fechaEntradaNueva, fechaSalidaNueva;
         
         ResultSet resSelect1, resSelect2;
-        try{
-            declaracionSelect1 = conexionBD.createStatement();
+        try(Statement declaracionSelect1 = conexionBD.createStatement();Statement declaracionSelect2 = conexionBD.createStatement();Statement declaracionUpdate = conexionBD.createStatement()){
+            
             //SACAR EL ID DEL CLIENTE
             resSelect1 = declaracionSelect1.executeQuery("select idCliente from cliente where nombre like '" + rModificada.getCliente().getNombre() + "'");
             if(resSelect1.next())
@@ -210,7 +199,6 @@ public class DAO {
             
             idNuevo = rModificada.getId();
             //SACAR EL ID DE LA PARCELA
-            declaracionSelect2 = conexionBD.createStatement();
             resSelect1 = declaracionSelect1.executeQuery("select idParcela from parcela where fila = " + rModificada.getFila() + ", columna = " + rModificada.getColumna());
             if(resSelect1.next())
                 idParcelaNuevo = resSelect1.getInt("idParcela");
@@ -218,7 +206,6 @@ public class DAO {
             fechaEntradaNueva = rModificada.getFechaEntrada().toString();
             fechaSalidaNueva = rModificada.getFechaSalida().toString();
             
-            declaracionUpdate = conexionBD.createStatement();
             String query = "UPDATE reservas SET id = " + 
                     idNuevo + ", idCliente = " + idClienteNuevo + ", idParcela = " + idParcelaNuevo + 
                     ", fechaEntrada = TO_DATE('" + fechaEntradaNueva + "', 'YYYY,MM,DD), fechaSalida = TO_DATE('" + fechaSalidaNueva + "', 'YYYY,MM,DD)";
@@ -230,16 +217,11 @@ public class DAO {
     }
             
     public static void anyadirActividad(Actividad act){
-        Statement declaracion;
         ResultSet resact;
         ResultSet res;
+        String codigo = "INSERT INTO ACTIVIDAD(idActividad,fecha,lugar,titulo) VALUES " + "(?,?,?,?)";
         
-        try{
-            
-            String codigo = "INSERT INTO ACTIVIDAD(idActividad,fecha,lugar,titulo) VALUES " + "(?,?,?,?)";
-            PreparedStatement ps = conexionBD.prepareStatement(codigo);
-            
-            declaracion = conexionBD.createStatement();
+        try(Statement declaracion = conexionBD.createStatement();PreparedStatement ps = conexionBD.prepareStatement(codigo);){
             resact = declaracion.executeQuery("select count(*) from actividad");
             
             int numact = 0;
