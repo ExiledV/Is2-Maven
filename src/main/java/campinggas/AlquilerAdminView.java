@@ -398,7 +398,7 @@ public void mostrarError() {
 
     public boolean esNueva() {
         String seleccion = listaReservas.getSelectedValue();
-        if (seleccion == "Nueva reserva.")
+        if ("Nueva reserva.".equals(seleccion))
             return true;
         else
             return false;
